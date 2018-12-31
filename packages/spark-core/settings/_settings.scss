@@ -509,6 +509,7 @@ $sprk-dropdown-active-border: 2.5px solid $sprk-red !default;
 $sprk-dropdown-active-box-shadow: -1px 0 0 0 $sprk-red !default;
 $sprk-dropdown-max-width: 24rem !default;
 $sprk-dropdown-shadow: 0 5px 10px rgba(0, 0, 0, 0.05) !default;
+$sprk-dropdown-line-height: 1;
 
 //
 // Modals
@@ -541,9 +542,13 @@ $sprk-big-nav-link-font-weight: 300;
 $sprk-big-nav-active-color: $sprk-black !default;
 $sprk-masthead-logo-max-width: 192px !default;
 $sprk-masthead-logo-min-width: 174px !default;
-$sprk-mobile-masthead-height: 113px !default;
+$sprk-mobile-masthead-height: 81px !default;
 $sprk-narrow-nav-left-border: 5px solid $sprk-black !default;
-$sprk-narrow-nav-link-font-weight: normal !default;
+$sprk-narrow-nav-active-link-font-weight: 300 !default;
+$sprk-narrow-nav-link-font-weight: 300 !default;
+$sprk-narrow-nav-active-link-color: $sprk-font-weight-body-one !default;
+$sprk-narrow-nav-heading-color: $sprk-black !default;
+$sprk-narrow-nav-icon-stroke: $sprk-black !default;
 
 //
 // Spinners
