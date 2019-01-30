@@ -25,6 +25,11 @@ function SiteNav(props) {
             Alerts
           </Link>
         </li>
+        <li>
+          <Link to="/accordions" className="drizzle-b-Link drizzle-b-Link--light">
+            Accordions
+          </Link>
+        </li>
       </ul>
     </nav>
   );
