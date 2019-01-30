@@ -16,6 +16,11 @@ function SiteNav() {
           </Link>
         </li>
         <li>
+          <Link to="/card" className="drizzle-b-Link drizzle-b-Link--light">
+            Card
+          </Link>
+        </li>
+        <li>
           <Link to="/dictionary" className="drizzle-b-Link drizzle-b-Link--light">
             Dictionary
           </Link>

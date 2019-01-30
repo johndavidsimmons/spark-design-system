@@ -1,4 +1,5 @@
 export { default as SprkAlert } from './SprkAlert/SprkAlert';
+export { default as SprkCard } from './SprkCard/SprkCard';
 export { default as SprkButton } from './SprkButton/SprkButton';
 export { default as SprkDictionary } from './SprkDictionary/SprkDictionary';
 export { default as SprkDivider } from './SprkDivider/SprkDivider';

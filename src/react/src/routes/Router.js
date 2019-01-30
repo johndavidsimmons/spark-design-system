@@ -11,6 +11,7 @@ import SprkMastheadExtendedDocs from './SprkMastheadExtendedDocs/SprkMastheadExt
 import SprkDropdownDocs from './SprkDropdownDocs/SprkDropdownDocs';
 import SprkHighlightBoardDocs from './SprkHighlightBoardDocs/SprkHighlightBoardDocs';
 import SprkDictionaryDocs from './SprkDictionaryDocs/SprkDictionaryDocs';
+import SprkCardDocs from './SprkCardDocs/SprkCardDocs';
 import SprkTabsDocs from './SprkTabsDocs/SprkTabsDocs';
 import SprkIconDocs from './SprkIconDocs/SprkIconDocs';
 import NotFound from './NotFound/NotFound';
@@ -21,6 +22,7 @@ const Router = () => (
       <Route exact path="/" component={Homepage} />
       <Route exact path="/alert" component={SprkAlertDocs} />
       <Route exact path="/button" component={SprkButtonDocs} />
+      <Route exact path="/card" component={SprkCardDocs} />
       <Route exact path="/dropdown" component={SprkDropdownDocs} />
       <Route exact path="/icon" component={SprkIconDocs} />
       <Route exact path="/link" component={SprkLinkDocs} />
