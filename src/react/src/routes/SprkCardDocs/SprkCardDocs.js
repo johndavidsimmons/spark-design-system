@@ -12,6 +12,7 @@ const SprkLinkDocs = () => {
         <h3 class="sprk-b-TypeDisplayFour sprk-u-mbm">Base Card</h3>
         <SprkCard>
           <div className="sprk-o-Stack__item sprk-c-Card__content sprk-o-Stack sprk-o-Stack--large">
+            Base Card Content
           </div>
         </SprkCard>
       </ExampleContainer>
@@ -20,6 +21,7 @@ const SprkLinkDocs = () => {
         <h3 class="sprk-b-TypeDisplayFour sprk-u-mbm">Standout Card</h3>
         <SprkCard standout>
           <div className="sprk-o-Stack__item sprk-c-Card__content sprk-o-Stack sprk-o-Stack--medium">
+            Standout Card Content
           </div>
         </SprkCard>
       </ExampleContainer>
@@ -31,17 +33,35 @@ const SprkLinkDocs = () => {
             <h3 className="sprk-b-TypeDisplaySeven sprk-o-Stack__item sprk-u-Color--white">
               Description
             </h3>
-
             <h4 className="sprk-b-TypeDisplayFive sprk-o-Stack__item sprk-u-Color--white">
               Card Title
             </h4>
           </div>
-
           <div className="sprk-o-Stack__item sprk-o-Stack sprk-o-Stack--medium sprk-c-Card__content">
             <p className="sprk-b-TypeBodyTwo sprk-o-Stack__item">
               Lorem ipsum dolor sit amet, doctus invenire vix te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam.
             </p>
           </div>
+        </SprkCard>
+      </ExampleContainer>
+
+      <ExampleContainer>
+        <h3 class="sprk-b-TypeDisplayFour sprk-u-mbm">Teaser Card with Button CTA</h3>
+        <SprkCard
+          variant="teaser"
+          title="Teaser Card Title"
+          bodyText="Body text of a teaser card."
+          mediaType="img"
+          imgSrc={cardImage}
+          imgAlt="Placeholder Image"
+          imgHref="www.sparkdesignsystem.com"
+          imgLinkAnalytics="Card:teaser link"
+          ctaType="button"
+          ctaText="Learn More"
+          ctaHref="www.sparkdesignsystem.com"
+          ctaAnalytics="Button: Spark"
+          idString="card-4"
+        >
         </SprkCard>
       </ExampleContainer>
 
@@ -57,26 +77,6 @@ const SprkLinkDocs = () => {
           imgHref="www.sparkdesignsystem.com"
           imgLinkAnalytics="Card:teaser link"
           ctaType="link"
-          ctaText="Learn More"
-          ctaHref="www.sparkdesignsystem.com"
-          ctaAnalytics="Button: Spark"
-          idString="card-4"
-        >
-        </SprkCard>
-      </ExampleContainer>
-
-      <ExampleContainer>
-        <h3 class="sprk-b-TypeDisplayFour sprk-u-mbm">Teaser Card with Image</h3>
-        <SprkCard
-          variant="teaser"
-          title="Teaser Card Title"
-          bodyText="Body text of a teaser card."
-          mediaType="img"
-          imgSrc={cardImage}
-          imgAlt="Placeholder Image"
-          imgHref="www.sparkdesignsystem.com"
-          imgLinkAnalytics="Card:teaser link"
-          ctaType="button"
           ctaText="Learn More"
           ctaHref="www.sparkdesignsystem.com"
           ctaAnalytics="Button: Spark"
@@ -109,18 +109,15 @@ const SprkLinkDocs = () => {
           <h3 className="sprk-o-Stack__item sprk-c-Card__content sprk-b-TypeDisplayFive">
             Title
           </h3>
-
           <a href="#" className="sprk-o-Stack__item">
             <img
               alt="Spark placeholder image"
               src={cardImage} />
           </a>
-
           <div className="sprk-o-Stack__item sprk-c-Card__content sprk-o-Stack sprk-o-Stack--large">
             <p className="sprk-b-TypeBodyTwo sprk-o-Stack__item">
               Lorem ipsum dolor sit amet, doctus invenire vix te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam.
             </p>
-
             <div className="sprk-o-Stack__item">
               <a href="#" className="sprk-c-Button">
                 Learn More
