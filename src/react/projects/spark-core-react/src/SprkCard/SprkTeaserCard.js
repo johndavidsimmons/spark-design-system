@@ -9,9 +9,11 @@ const SprkTeaserCard = (props) => {
   return teaserConfig.map((config) => {
     const {
       additionalCtaClasses,
+      additionalCtaIconClasses,
       bodyText,
       ctaAnalytics,
       ctaHref,
+      ctaIcon,
       ctaText,
       ctaType,
       iconLinkAnalytics,
@@ -105,6 +107,14 @@ const SprkTeaserCard = (props) => {
             <div className="sprk-o-Stack__item">
               <a className={getCtaClasses} href={ctaHref} data-analytics={ctaAnalytics} id="foo">
                 {ctaText}
+                {ctaIcon &&
+                  {/*
+                  <SprkIcon
+                    iconType={ctaIcon}
+                    additionalIconClasses={additionalCtaIconClasses}
+                  />
+                  */}
+                }
               </a>
             </div>
           </div>

@@ -68,8 +68,7 @@ const SprkLinkDocs = () => {
               }
             ]
           }
-        >
-        </SprkCard>
+        />
       </ExampleContainer>
 
       <ExampleContainer>
@@ -94,8 +93,7 @@ const SprkLinkDocs = () => {
               }
             ]
           }
-        >
-        </SprkCard>
+        />
       </ExampleContainer>
 
       <ExampleContainer>
@@ -120,36 +118,173 @@ const SprkLinkDocs = () => {
               }
             ]
           }
-        >
-        </SprkCard>
+        />
+      </ExampleContainer>
+
+      <ExampleContainer>
+        <h3 className="sprk-b-TypeDisplayFour sprk-u-mbm">Teaser Card with CTA Icon</h3>
+        <SprkCard
+          idString="card-4"
+          teaserConfig={
+            [
+              {
+                bodyText: 'Body text of a teaser card.',
+                ctaAnalytics: 'link: Spark',
+                ctaHref: 'www.sparkdesignsystem.com',
+                ctaIcon: "chevron-right",
+                ctaText: 'Learn More',
+                ctaType: 'link',
+                iconHref: '#',
+                iconLinkAnalytics: 'icon:link',
+                iconType: 'check',
+                additionalIconClasses: '',
+                mediaType: 'icon',
+                title: 'Teaser Card Title',
+                titleFirst: false
+              }
+            ]
+          }
+        />
       </ExampleContainer>
 
       <ExampleContainer>
         <h3 className="sprk-b-TypeDisplayFour sprk-u-mbm">Card Layout - Two Up</h3>
         Need React Split
-        <SprkCard standout idString="card-5">
-          Card 1
-        </SprkCard>
-        <SprkCard standout idString="card-5">
-          Card 2
-        </SprkCard>
+        <SprkCard
+          idString="card-4"
+          teaserConfig={
+            [
+              {
+                bodyText: 'Body text of a teaser card.',
+                ctaAnalytics: 'Button: Spark',
+                ctaHref: 'www.sparkdesignsystem.com',
+                ctaText: 'Learn More',
+                ctaType: 'button',
+                imgAlt: 'Placeholder Image',
+                imgHref: 'www.sparkdesignsystem.com',
+                imgLinkAnalytics: 'Card:teaser link',
+                imgSrc: teaserImage,
+                mediaType: 'img',
+                title: 'Teaser Card Title',
+                titleFirst: false
+              }
+            ]
+          }
+        />
+        <SprkCard
+            idString="card-4"
+            teaserConfig={
+              [
+                {
+                  bodyText: 'Body text of a teaser card.',
+                  ctaAnalytics: 'Button: Spark',
+                  ctaHref: 'www.sparkdesignsystem.com',
+                  ctaText: 'Learn More',
+                  ctaType: 'button',
+                  imgAlt: 'Placeholder Image',
+                  imgHref: 'www.sparkdesignsystem.com',
+                  imgLinkAnalytics: 'Card:teaser link',
+                  imgSrc: teaserImage,
+                  mediaType: 'img',
+                  title: 'Teaser Card Title',
+                  titleFirst: false
+                }
+              ]
+            }
+          />
       </ExampleContainer>
 
       <ExampleContainer>
         <h3 className="sprk-b-TypeDisplayFour sprk-u-mbm">Card Layout - Four Up</h3>
         Need React Split
-        <SprkCard standout idString="card-5">
-          Card 1
-        </SprkCard>
-        <SprkCard standout idString="card-5">
-          Card 2
-        </SprkCard>
-        <SprkCard standout idString="card-5">
-          Card 3
-        </SprkCard>
-        <SprkCard standout idString="card-5">
-          Card 4
-        </SprkCard>
+        <SprkCard
+          idString="card-1"
+          teaserConfig={
+            [
+              {
+                bodyText: 'Body text of a teaser card.',
+                ctaAnalytics: 'link: Spark',
+                ctaHref: 'www.sparkdesignsystem.com',
+                ctaText: 'Learn More',
+                ctaType: 'link',
+                additionalIconClasses: '',
+                imgAlt: 'Placeholder Image',
+                imgHref: 'www.sparkdesignsystem.com',
+                imgLinkAnalytics: 'Card:teaser link',
+                imgSrc: teaserImage,
+                mediaType: 'img',
+                title: 'Teaser Card Title',
+                titleFirst: false
+              }
+            ]
+          }
+        />
+        <SprkCard
+          idString="card-2"
+          teaserConfig={
+            [
+              {
+                bodyText: 'Body text of a teaser card.',
+                ctaAnalytics: 'link: Spark',
+                ctaHref: 'www.sparkdesignsystem.com',
+                ctaText: 'Learn More',
+                ctaType: 'link',
+                additionalIconClasses: '',
+                imgAlt: 'Placeholder Image',
+                imgHref: 'www.sparkdesignsystem.com',
+                imgLinkAnalytics: 'Card:teaser link',
+                imgSrc: teaserImage,
+                mediaType: 'img',
+                title: 'Teaser Card Title',
+                titleFirst: false
+              }
+            ]
+          }
+        />
+        <SprkCard
+          idString="card-3"
+          teaserConfig={
+            [
+              {
+                bodyText: 'Body text of a teaser card.',
+                ctaAnalytics: 'link: Spark',
+                ctaHref: 'www.sparkdesignsystem.com',
+                ctaText: 'Learn More',
+                ctaType: 'link',
+                additionalIconClasses: '',
+                imgAlt: 'Placeholder Image',
+                imgHref: 'www.sparkdesignsystem.com',
+                imgLinkAnalytics: 'Card:teaser link',
+                imgSrc: teaserImage,
+                mediaType: 'img',
+                title: 'Teaser Card Title',
+                titleFirst: false
+              }
+            ]
+          }
+        />
+        <SprkCard
+          idString="card-4"
+          teaserConfig={
+            [
+              {
+                bodyText: 'Body text of a teaser card.',
+                ctaAnalytics: 'link: Spark',
+                ctaHref: 'www.sparkdesignsystem.com',
+                ctaText: 'Learn More',
+                ctaType: 'link',
+                additionalIconClasses: '',
+                imgAlt: 'Placeholder Image',
+                imgHref: 'www.sparkdesignsystem.com',
+                imgLinkAnalytics: 'Card:teaser link',
+                imgSrc: teaserImage,
+                mediaType: 'img',
+                title: 'Teaser Card Title',
+                titleFirst: false
+              }
+            ]
+          }
+        />
       </ExampleContainer>
     </CentralColumnLayout>
   );
