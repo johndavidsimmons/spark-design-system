@@ -151,7 +151,7 @@ const SprkLinkDocs = () => {
         <h3 className="sprk-b-TypeDisplayFour sprk-u-mbm">Card Layout - Two Up</h3>
         Need React Split
         <SprkCard
-          idString="card-4"
+          idString="card-1"
           teaserConfig={
             [
               {
@@ -172,7 +172,7 @@ const SprkLinkDocs = () => {
           }
         />
         <SprkCard
-            idString="card-4"
+            idString="card-2"
             teaserConfig={
               [
                 {

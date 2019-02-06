@@ -8,8 +8,8 @@ const SprkCardHighlightedHeader = (props) => {
   return highlightedHeaderConfig.map((config) => {
     const {
       bodyText,
-      title,
-      description
+      description,
+      title
     } = config;
 
     return (

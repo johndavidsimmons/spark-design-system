@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
+import cx from 'classnames';
 import SprkCardHighlightedHeader from './SprkCardHighlightedHeader';
 import SparkTeaserCard from './SprkTeaserCard';
 
@@ -51,7 +51,7 @@ const SprkCard = (props) => {
 
   return (
     <div
-      className={classnames(
+      className={cx(
         'sprk-c-Card sprk-o-Stack',
         additionalCardClasses,
         {
@@ -77,9 +77,23 @@ SprkCard.propTypes = {
   idString: PropTypes.string,
   standout: PropTypes.bool,
   teaserConfig: PropTypes.arrayOf(PropTypes.shape({
-    description: PropTypes.string,
-    cardTitle: PropTypes.string,
-    cardBodyText: PropTypes.string
+    additionalCtaClasses: PropTypes.string,
+    additionalCtaIconClasses: PropTypes.string,
+    bodyText: PropTypes.string,
+    ctaAnalytics: PropTypes.string,
+    ctaHref: PropTypes.string,
+    ctaIcon: PropTypes.string,
+    ctaText: PropTypes.string,
+    ctaType: PropTypes.oneOf(['link', 'button']),
+    iconHref: PropTypes.string,
+    iconLinkAnalytics: PropTypes.string,
+    imgAlt: PropTypes.string,
+    imgHref: PropTypes.string,
+    imgLinkAnalytics: PropTypes.string,
+    imgSrc: PropTypes.string,
+    mediaType: PropTypes.oneOf(['img', 'icon']),
+    title: PropTypes.string,
+    titleFirst: PropTypes.bool
   })),
 }
 

@@ -1,17 +1,13 @@
-<SprkCard standout idString="card-3">
-  <div className="sprk-o-Stack__item sprk-c-Card__header sprk-o-Stack sprk-o-Stack--medium">
-    <h3 className="sprk-b-TypeDisplaySeven sprk-o-Stack__item sprk-u-Color--white">
-      Description
-    </h3>
-    <h4 className="sprk-b-TypeDisplayFive sprk-o-Stack__item sprk-u-Color--white">
-      Card Title
-    </h4>
-  </div>
-  <div className="sprk-o-Stack__item sprk-o-Stack sprk-o-Stack--medium sprk-c-Card__content">
-    <p className="sprk-b-TypeBodyTwo sprk-o-Stack__item">
-      Lorem ipsum dolor sit amet, doctus invenire vix te.
-      Facilisi perpetua an pri, errem commune mea at, mei prima
-      tantas signiferumque at. Numquam.
-    </p>
-  </div>
-</SprkCard>
+<SprkCard
+  standout
+  idString="card-3"
+  highlightedHeaderConfig={
+    [
+      {
+        bodyText: 'Highlight header card body text. Lorem ipsum dolor sit amet, doctus invenire vix te. Facilisi perpetua an pri, errem commune mea at, mei prima tantas signiferumque at. Numquam.',
+        title: 'Highlight Header Card Title',
+        description: 'Highlight Header Description',
+      }
+    ]
+  }
+/>
