@@ -29,10 +29,10 @@ const SprkLinkDocs = () => {
       </ExampleContainer>
 
       <ExampleContainer>
-        <h3 className="sprk-b-TypeDisplayFour sprk-u-mbm">Card with Highlighted Header Array</h3>
+        <h3 className="sprk-b-TypeDisplayFour sprk-u-mbm">Card with Highlighted Header</h3>
         <SprkCard
           standout
-          idString="card-3"
+          idString="card-with-highlighted-header"
           highlightedHeaderConfig={
             [
               {
@@ -49,7 +49,7 @@ const SprkLinkDocs = () => {
       <ExampleContainer>
         <h3 className="sprk-b-TypeDisplayFour sprk-u-mbm">Teaser Card with Button CTA</h3>
         <SprkCard
-          idString="card-4"
+          idString="card-with-button-CTA"
           teaserConfig={
             [
               {

@@ -1,11 +1,13 @@
 import React from 'react';
+import { uniqueId } from 'lodash';
 
 const SprkCardHighlightedHeader = (props) => {
   const {
-    highlightedHeaderConfig
+    highlightedHeaderConfig,
   } = props;
 
   return highlightedHeaderConfig.map((config) => {
+    const id = uniqueId();
     const {
       bodyText,
       description,
@@ -13,7 +15,7 @@ const SprkCardHighlightedHeader = (props) => {
     } = config;
 
     return (
-      <React.Fragment>
+      <React.Fragment key={id}>
         <div className="sprk-o-Stack__item sprk-c-Card__header sprk-o-Stack sprk-o-Stack--medium">
           <h3 className="sprk-b-TypeDisplaySeven sprk-o-Stack__item sprk-u-Color--white">
             {description}
