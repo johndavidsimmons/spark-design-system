@@ -114,12 +114,12 @@ const SprkTeaserCard = (props) => {
       {
         'sprk-c-Button': ctaType === 'button',
         'sprk-b-Link': ctaType === 'link',
-        'sprk-o-Stack__item sprk-b-Link--simple sprk-b-Link--has-icon' : ctaIcon
+        'sprk-o-Stack__item sprk-b-Link--simple sprk-b-Link--has-icon' : ctaIcon,
       }
     )
 
     const GetCtaContent = () => {
-      if (ctaType === 'link') {
+      if (ctaIcon) {
         return (
           <a
             className={getCtaClasses}
@@ -128,7 +128,7 @@ const SprkTeaserCard = (props) => {
           >
             {ctaText}
             {ctaIcon &&
-              ctaIcon
+              ">"
               /*
               <SprkIcon
                 iconType={ctaIcon}
