@@ -1,0 +1,95 @@
+---
+title: Analytics
+---
+
+<div class=" drizzle-o-Layout__header">
+  <h1 class="drizzle-b-h1">Web Analytics</h1>
+</div>
+
+<div class="drizzle-o-Layout__content drizzle-b-LongFormText">
+  <div class="drizzle-o-ContentGrouping">
+    <h2 class="drizzle-b-h2">Tools</h2>
+    <p>Quicken Loans runs a web analytics stack centered around <a href="//www.adobe.com/experience-platform/launch.html" target="_blank">Adobe Launch</a> (formerly DTM) for data collection and <a href="https://www.adobe.com/analytics/adobe-analytics.html" target="_blank">Adobe Analytics</a> for reporting.</p>
+    <p>Launch has two primary functions:</p>
+        <ul class="sprk-b-List sprk-b-List--indented" data-id="launch-functions">
+          <li data-id="list-item-1">Collect data from a website and send it to Adobe Analytics.</li>
+          <li data-id="list-item-2">Loading of vendor code or other code unrelated to the core application. Examples include Facebook marketing code and the Live Engage Chat library. This is often referred to as "tag management".</li>
+        </ul>
+    </p>
+    <p>Although Launch is a very robust and capable tool, the collection of web analytics is not totally automatic. Launch must be configured on a per property basis. Typically, Launch properties (collections of analytics rules) are segmented by codebase, rather than domain. The data collected by a property is defined by its stakeholders.</p>
+  </div>
+
+  <!-- Embedding Launch -->
+  <div class="drizzle-o-ContentGrouping">
+    <h2 class="drizzle-b-h2">Embedding Launch</h2>
+    <p>The Launch javascript snippet loads the Launch library on a page and should be loaded in the global head as high as possible. Each page requires one snippet, but it differs based on environment: one for the <span class="sprk-u-FontWeight--bold">production environment</span>, and one for <span class="sprk-u-FontWeight--bold">all non-production environments.</span> It is recommended that you load the library asychronously.</p>
+    
+    <!-- Non Prod snippet -->
+    <h3 class="drizzle-b-h3">Non-Production</h3>
+    <p>This is an <span class="sprk-u-FontWeight--bold">EXAMPLE</span> of a Launch script to be placed in <span <span class="sprk-u-FontWeight--bold">non-production</span> environments. Note the async attribute and "-staging" flag in the file.</p>
+    <pre class="sprk-u-ptl language-markup">
+      <span class="token tag">&lt;script</span> <span class="token attr-name">src=</span><span class="token attr-value">"//assets.adobedtm.com/launch-ENc379233258344e5ab0033464ce7e8d21-staging.min.js"</span> <span class="token attr-name">async</span><span class="token tag">&gt;&lt;/script&gt;</span>
+    </pre>
+
+    <!-- Prod snippet -->
+    <p></p>
+    <h3 class="drizzle-b-h3">Production</h3>
+    <p>This is an <span class="sprk-u-FontWeight--bold">EXAMPLE</span> of a Launch script to be placed in a <span class="sprk-u-FontWeight--bold">production</span> environment. Note the async attribute and lack of "-staging" flag in the file.</p>
+    <pre class="sprk-u-ptl language-markup">
+      <span class="token tag">&lt;script</span> <span class="token attr-name">src=</span><span class="token attr-value">"//assets.adobedtm.com/launch-ENc379233258344e5ab0033464ce7e8d21-staging.min.js"</span> <span class="token attr-name">async</span><span class="token tag">&gt;&lt;/script&gt;</span>
+    </pre>
+  </div>
+
+  <span class="sprk-c-Divider" data-id="divider-1"></span>
+            
+
+  <!-- Click tracking -->
+  <div class="drizzle-o-ContentGrouping">
+    <h2 class="drizzle-b-h2">Click Tracking</h2>
+    <p>There are two ways that clicks are tracked in Launch, implicitly through a process called "Activity Map" and explicity through attribute "tagging".</p>
+    <h3 class="drizzle-b-h3">Explicit click tracking with Attribute tagging</h3>
+    <p>Placing the attribute <em>data-analytics-click="naming formula"</em> on an element will instruct Launch to track clicks on that element. The naming formula is: <span class="sprk-u-FontWeight--bold">channel:product:link text</span>. For example, if the button below runs a calculation on a purchase calculator:</p>
+
+    BUTTON CODE HERE UI & MARKUP
+
+  </div>  
+
+</div> <!-- main div -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
