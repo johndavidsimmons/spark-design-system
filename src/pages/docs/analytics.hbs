@@ -13,7 +13,7 @@ title: Analytics
     <p>Launch has two primary functions:</p>
         <ul class="sprk-b-List sprk-b-List--indented" data-id="launch-functions">
           <li data-id="list-item-1">Collect data from a website and send it to Adobe Analytics.</li>
-          <li data-id="list-item-2">Loading of vendor code or other code unrelated to the core application. Examples include Facebook marketing code and the Live Engage Chat library. This is often referred to as "tag management".</li>
+          <li data-id="list-item-2">Load vendor code or other code unrelated to the core application. Examples include Facebook marketing code and the Live Engage Chat library. This process is referred to as "tag management".</li>
         </ul>
     </p>
     <p>Although Launch is a very robust and capable tool, the collection of web analytics is not totally automatic. Launch must be configured on a per property basis. Typically, Launch properties (collections of analytics rules) are segmented by codebase, rather than domain. The data collected by a property is defined by its stakeholders.</p>
@@ -46,11 +46,28 @@ title: Analytics
   <!-- Click tracking -->
   <div class="drizzle-o-ContentGrouping">
     <h2 class="drizzle-b-h2">Click Tracking</h2>
-    <p>There are two ways that clicks are tracked in Launch, implicitly through a process called "Activity Map" and explicity through attribute "tagging".</p>
+    <p>There are two ways that clicks are tracked in Launch, explicity through attribute "tagging" and automatically through a process called "Activity Map".</p>
+    
+    <!--  Tagging -->
     <h3 class="drizzle-b-h3">Explicit click tracking with Attribute tagging</h3>
-    <p>Placing the attribute <em>data-analytics-click="naming formula"</em> on an element will instruct Launch to track clicks on that element. The naming formula is: <span class="sprk-u-FontWeight--bold">channel:product:link text</span>. For example, if the button below runs a calculation on a purchase calculator:</p>
-
-    BUTTON CODE HERE UI AND MARKUP
+    <p>Placing the attribute <em>data-analytics-click="channel:product:link text"</em> on an element will instruct Launch to track clicks on that element and record the value of the <em>data-analytics-click</em> attribute. Primary buttons (and buttons that execute a non-navigation action) should contain a click tracking tag.<em>Channel:product:link text</em> is a generic guideline for the value. For example, if the primary button below runs a calculation on a purchase calculator on a Rocket Mortgage Page:</p>
+    <pre class="sprk-u-ptl language-markup"><code class="drizzle-c-Preview__markup  language-markup" id="clipboard-primary"><span class="token tag"><span class="token tag"><span class="token punctuation">    &lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sprk-c-Button<span class="token punctuation">"</span></span> <span class="token attr-name">data-analytics-click</span><span class="token punctuation">=</span><span class="token punctuation">"</span>rocket:purchase calculator:calculate<span class="token punctuation">"</span><span class="token punctuation">&gt;</span></span>
+      Calculate
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span></code>
+    </pre>
+  
+    <!-- Activity Map -->
+    <p></p>
+    <h3 class="drizzle-b-h3">Automatic click tracking with Activity Map</h3>
+    <p>Launch will automatically track clicks on certain elements through a process called Activity Map. This is how all other clicks (i.e. those that are not tagged) will be collected and sent to reporting. Launch will record an Activity Map click events on elements that meet any of the following criteria:</p>
+    <ul class="sprk-b-List sprk-b-List--indented" data-id="activity-map-criteria">
+      <li data-id="list-item-1">Anchor or Area element with an href attribute</li>
+      <li data-id="list-item-2">Input element with a value attribute or child text</li>
+      <li data-id="list-item-4">Button elements</li>
+      <li data-id="list-item-5">Any element with an onClick function that sets an s_objectID variable (Used if element needs to be tracked by activity map, but does not meet any criteria above)</li>
+    </ul>
+    <p></p>
+    <p><strong>Note:</strong> Button elements with the attribute type="button" will NOT be tracked by Activity Map. To track clicks on these elements you can replace type="button" with role="button" or submit="button".</p>    
 
   </div>  
 
